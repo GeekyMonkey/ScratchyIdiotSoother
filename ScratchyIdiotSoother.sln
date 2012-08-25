@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScratchyDerby", "ScratchyDerby\ScratchyDerby.csproj", "{6C9B40A9-822E-45AF-9128-DE299D94B75F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScratchyIdiotSoother", "ScratchyDerby\ScratchyIdiotSoother.csproj", "{6C9B40A9-822E-45AF-9128-DE299D94B75F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScratchyDerbyContent", "ScratchyDerbyContent\ScratchyDerbyContent.contentproj", "{5445846E-AA81-4DE2-A3BE-85538854562F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScratchyIdiotSootherContent", "ScratchyDerbyContent\ScratchyIdiotSootherContent.contentproj", "{5445846E-AA81-4DE2-A3BE-85538854562F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

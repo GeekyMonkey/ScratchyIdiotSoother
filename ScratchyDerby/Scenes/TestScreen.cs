@@ -15,9 +15,6 @@ namespace ScratchyXna
         Text ScoreText;
         Text RestartText;
         Text HappyText;
-        MissileSprite missile;
-        UfoSprite ufo;
-        BarrierSprite barrier;
         Hypnodisc hypnodisc;
         Mugatu mugatu;
 
@@ -61,25 +58,6 @@ namespace ScratchyXna
             {
                 RestartText.Value = "TAP to Play Again";
             }
-
-            missile = AddSprite<MissileSprite>();
-            missile.SetCostume("ufo");
-            missile.Costume.YCenter = VerticalAlignments.Center;
-            missile.Scale = 2;
-            missile.Show();
-            missile.X = 0;
-            missile.Y = 50;
-
-            barrier = AddSprite<BarrierSprite>();
-            barrier.Scale = 2.5f;
-            barrier.Y = -70;
-
-            ufo = AddSprite<UfoSprite>();
-            ufo.Position = Vector2.Zero;
-            ufo.Costume.YCenter = VerticalAlignments.Top;
-            ufo.Scale = 1;
-            ufo.Show();
-
 
             AddSound("happyhappy");
             hypnodisc = AddSprite<Hypnodisc>();
@@ -148,15 +126,6 @@ namespace ScratchyXna
                 //hypnodisc.Y = 0;
             }
 
-            if (Mouse.Button1Pressed())
-            {
-                ufo.RotateTowards(Mouse.Position, 90);
-                ufo.GlideTo(Mouse.Position, 2f);
-            }
-
-            barrier.SpriteColor = barrier.IsTouching(Mouse.Position) ? 
-                Color.Green : Color.Aqua;
-
             // Space key to play again
             if (Keyboard.KeyPressed(Keys.Space))
             {
@@ -165,24 +134,6 @@ namespace ScratchyXna
                 ShowScene("play");
             }
 
-            if (missile != null)
-            {
-                missile.Rotation += .5f;
-                missile.SpriteColor = ufo.IsTouching(missile) ? Color.Red : Color.Green;
-            }
-            if (ufo != null)
-            {
-                ufo.DirectionFrom(Keyboard, 2);
-                if (Keyboard.KeyDown(Keys.Z))
-                {
-                    ufo.Rotation += 1f;
-                }
-                if (Keyboard.KeyDown(Keys.X))
-                {
-                    ufo.Rotation -= 1f;
-                }
-            }
-            
         }
 
     }

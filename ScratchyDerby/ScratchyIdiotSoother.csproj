@@ -78,21 +78,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
-    <Compile Include="Scenes\GameOverScreen.cs" />
-    <Compile Include="Scenes\PlayScreen.cs" />
     <Compile Include="Scenes\TestScreen.cs" />
-    <Compile Include="Scenes\TitleScreen.cs" />
-    <Compile Include="ScratchyDerbyGame.cs" />
+    <Compile Include="ScratchyIdiotSootherGame.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sprites\Alien.cs" />
-    <Compile Include="Sprites\Barrier.cs" />
     <Compile Include="Sprites\Mugatu.cs" />
     <Compile Include="Sprites\Hypnodisc.cs" />
-    <Compile Include="Sprites\Line.cs" />
-    <Compile Include="Sprites\Lives.cs" />
-    <Compile Include="Sprites\Missile.cs" />
-    <Compile Include="Sprites\Ship.cs" />
-    <Compile Include="Sprites\Ufo.cs" />
     <Compile Include="States\AlienStates.cs" />
     <Compile Include="States\AlienDirections.cs" />
     <Compile Include="States\MissileStates.cs" />
@@ -105,8 +95,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ScratchyDerbyContent\ScratchyDerbyContent.contentproj">
-      <Name>GameContent %28Content%29</Name>
+    <ProjectReference Include="..\ScratchyDerbyContent\ScratchyIdiotSootherContent.contentproj">
+      <Name>ScratchyIdiotSootherContent %28Content%29</Name>
       <XnaReferenceType>Content</XnaReferenceType>
       <Project>{5445846E-AA81-4DE2-A3BE-85538854562F}</Project>
     </ProjectReference>
